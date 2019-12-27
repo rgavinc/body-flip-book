@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - npm run build
-    - export DEPLOYPATH=/home/gavinrob/repositories/body-flip-book/build/
-    - /bin/cp * $DEPLOYPATH
+    - export DEPLOYPATH=/home/gavinrob/repositories/body-flip-book/
+    - /bin/cp index.html $DEPLOYPATH
