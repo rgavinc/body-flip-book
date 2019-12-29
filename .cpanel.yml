@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gavinrob/body-flip-book.gavinrob.com/
-    - /bin/cp * $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
