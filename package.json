@@ -1,6 +1,7 @@
 {
   "name": "body-flip-book",
   "version": "0.1.0",
+  "homepage": "http://body-flip-book.gavinrob.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
