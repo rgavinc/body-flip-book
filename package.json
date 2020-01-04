@@ -1,7 +1,7 @@
 {
   "name": "body-flip-book",
-  "version": "0.1.0",
-  "homepage": "http://body-flip-book.gavinrob.com",
+  "version": "1.0.0",
+  "homepage": "http://gavinrob.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,6 +12,7 @@
     "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
     "react-image-gallery": "^1.0.3",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "styled-components": "^4.4.1"
   },

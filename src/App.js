@@ -5,6 +5,9 @@ import Menu from "./Menu";
 import styled, { createGlobalStyle } from "styled-components";
 import "./App.css";
 import Media from "./Media";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,17 +21,19 @@ const P = styled.p`
 `;
 
 const Wrapper = styled.div`
-  margin: 0 auto;
+  margin: auto;
   padding: 1rem;
+  height: 80vh;
   max-width: 1500px;
   display: flex;
   background-color: #fffffa;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: 1000px) {
     flex-direction: row;
+    padding: 5rem;
   }
 `;
 
@@ -42,16 +47,28 @@ const InnerWrapper = styled.div`
 
 function App() {
   return (
-    <Wrapper>
-      <GlobalStyle />
-      <Carousel />
-      <InnerWrapper>
-        <Title />
-        <Menu />
-        <P>________________________________</P>
-        <Media />
-      </InnerWrapper>
-    </Wrapper>
+    <Router>
+      <Wrapper>
+        <GlobalStyle />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Carousel />
+          </Route>
+        </Switch>
+        <InnerWrapper>
+          <Title />
+          <Menu />
+          <P>________________________________</P>
+          <Media />
+        </InnerWrapper>
+      </Wrapper>
+    </Router>
   );
 }
 

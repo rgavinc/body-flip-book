@@ -1,11 +1,11 @@
 import React from "react";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   color: #912f40;
 `;
-const Link = styled.a`
+const StyledLink = styled(Link)`
   margin: 0 2rem;
   color: #912f40;
   font-size: 2rem;
@@ -17,7 +17,9 @@ const Link = styled.a`
 
 const Menu = () => (
   <Wrapper>
-    <Link href="#">About</Link>●<Link href="#">Contact</Link>
+    <StyledLink to="/about">About</StyledLink>
+    {/* ●
+    <StyledLink to="/contact">Contact</StyledLink> */}
   </Wrapper>
 );
 
